@@ -245,6 +245,7 @@ def stringToFloat(Tq, Jq, Cq):
 # 4）将其组合生成训练集
 
 """
+# 采用特征化查询转换后生成的训练数据集
 Tq1, Jq1, Cq1 = stringToFloat(Tq1, Jq1, Cq1)
 Tq2, Jq2, Cq2 = stringToFloat(Tq2, Jq2, Cq2)
 Tq3, Jq3, Cq3 = stringToFloat(Tq3, Jq3, Cq3)
@@ -260,6 +261,8 @@ print(Cq1)
 print(Jq1)
 
 """
+
+# 此处为采用随机生成四组训练数据集
 X1 = (
     torch.randn(10, 50, requires_grad=True),
     torch.randn(7, 50, requires_grad=True),
